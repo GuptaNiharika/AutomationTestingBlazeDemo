@@ -243,21 +243,21 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 06-May-2020 at 16:52:31 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 07-May-2020 at 10:23:08 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>BUILD_ID</td>
-        <td>5</td></tr>
+        <td>6</td></tr>
       <tr>
         <td>BUILD_NUMBER</td>
-        <td>5</td></tr>
+        <td>6</td></tr>
       <tr>
         <td>BUILD_TAG</td>
-        <td>jenkins-SeleniumLearn-5</td></tr>
+        <td>jenkins-SeleniumLearn-6</td></tr>
       <tr>
         <td>EXECUTOR_NUMBER</td>
-        <td>0</td></tr>
+        <td>1</td></tr>
       <tr>
         <td>JOB_NAME</td>
         <td>SeleniumLearn</td></tr>
@@ -280,7 +280,7 @@ function filter_table(elem) {
         <td>WORKSPACE</td>
         <td>C:\Users\nihargupta\PycharmProjects\LoginPageAutomate</td></tr></table>
     <h2>Summary</h2>
-    <p>10 tests ran in 9.42 seconds. </p>
+    <p>10 tests ran in 11.74 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">9 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -296,16 +296,16 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">test_BlazeDemoAutomation.py::Test::test_checkFlightText_wrongmsg</td>
-          <td class="col-duration">0.33</td>
+          <td class="col-duration">0.42</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_BlazeDemoAutomation.Test object at 0x049C5430&gt;<br/>dataload = [&#x27;http://www.blazedemo.com/&#x27;, &#x27;niharika&#x27;]<br/><br/>    def test_checkFlightText_wrongmsg(self, dataload): #refers to the dataload fixture<br/>        flight = Flight(self.driver)<br/>        message = flight.getFlightText().text<br/>        allure.attach(self.driver.get_screenshot_as_png(),name=&quot;Screenshot1&quot;,attachment_type=AttachmentType.PNG)<br/>&gt;       assert message == &quot;Wrong&quot;<br/><span class="error">E       AssertionError: assert &#x27;Flights from... to New York:&#x27; == &#x27;Wrong&#x27;</span><br/><span class="error">E         - Wrong</span><br/><span class="error">E         + Flights from San Diego to New York:</span><br/><br/>test_BlazeDemoAutomation.py:44: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_BlazeDemoAutomation.Test object at 0x03FBACA0&gt;<br/>dataload = [&#x27;http://www.blazedemo.com/&#x27;, &#x27;niharika&#x27;]<br/><br/>    def test_checkFlightText_wrongmsg(self, dataload): #refers to the dataload fixture<br/>        flight = Flight(self.driver)<br/>        message = flight.getFlightText().text<br/>        allure.attach(self.driver.get_screenshot_as_png(),name=&quot;Screenshot1&quot;,attachment_type=AttachmentType.PNG)<br/>&gt;       assert message == &quot;Wrong&quot;<br/><span class="error">E       AssertionError: assert &#x27;Flights from... to New York:&#x27; == &#x27;Wrong&#x27;</span><br/><span class="error">E         - Wrong</span><br/><span class="error">E         + Flights from San Diego to New York:</span><br/><br/>test_BlazeDemoAutomation.py:44: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_BlazeDemoAutomation.py::Test::test_urlCheckHomePage</td>
-          <td class="col-duration">0.01</td>
+          <td class="col-duration">0.16</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -314,7 +314,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_BlazeDemoAutomation.py::Test::test_checkFlightPageText</td>
-          <td class="col-duration">1.09</td>
+          <td class="col-duration">1.50</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -332,7 +332,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_BlazeDemoAutomation.py::Test::test_chooseFlight</td>
-          <td class="col-duration">0.29</td>
+          <td class="col-duration">0.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -341,33 +341,6 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_BlazeDemoAutomation.py::Test::test_reservationText</td>
-          <td class="col-duration">0.02</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_BlazeDemoAutomation.py::Test::test_inputPassengerDetails</td>
-          <td class="col-duration">0.68</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_BlazeDemoAutomation.py::Test::test_urlFlightConfirmation</td>
-          <td class="col-duration">0.49</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_BlazeDemoAutomation.py::Test::test_flightConfirmationMessage</td>
           <td class="col-duration">0.03</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -376,8 +349,35 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
+          <td class="col-name">test_BlazeDemoAutomation.py::Test::test_inputPassengerDetails</td>
+          <td class="col-duration">1.21</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_BlazeDemoAutomation.py::Test::test_urlFlightConfirmation</td>
+          <td class="col-duration">0.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_BlazeDemoAutomation.py::Test::test_flightConfirmationMessage</td>
+          <td class="col-duration">0.05</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
           <td class="col-name">test_BlazeDemoAutomation.py::Test::test_closeWindow</td>
-          <td class="col-duration">2.08</td>
+          <td class="col-duration">0.46</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">

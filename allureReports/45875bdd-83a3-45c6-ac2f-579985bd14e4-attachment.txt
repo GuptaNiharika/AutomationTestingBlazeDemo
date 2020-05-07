@@ -1,0 +1,1 @@
+[32mINFO    [0m test_checkFlightPageText:test_BlazeDemoAutomation.py:40 http://www.blazedemo.com/

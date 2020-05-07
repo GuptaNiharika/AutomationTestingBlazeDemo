@@ -18,6 +18,13 @@ class Test(BaseClass):
         print(self.driver.current_url)
         assert self.driver.current_url == "http://www.blazedemo.com/"
 
+    @pytest.mark.failedtestcase
+    def test_url_wrong(self, dataload):  # refers to the dataload fixture
+        assert self.driver.current_url == "http://www.blazedemo.com/ggfjgfjg"
+        allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot1", attachment_type=AttachmentType.PNG)
+        logger = self.getLogger()
+        logger.info(dataload[0])
+
     def test_checkFlightPageText(self,dataload): #refers to the dataload fixture
         homePage=HomePage(self.driver)
         dropdownFrom=homePage.getFromPortDropdown()
@@ -36,7 +43,8 @@ class Test(BaseClass):
     #@pytest.mark.category("URL-CHECK")
     def test_urlViewFlights(self):
         assert self.driver.current_url == "http://www.blazedemo.com/reserve.php"
-
+    '''
+    @pytest.mark.failedtestcase
     def test_checkFlightText_wrongmsg(self, dataload): #refers to the dataload fixture
         flight = Flight(self.driver)
         message = flight.getFlightText().text
@@ -44,7 +52,7 @@ class Test(BaseClass):
         assert message == "Wrong"
         logger = self.getLogger()
         logger.info(dataload[0])
-
+    '''
     def test_chooseFlight(self):
         flight=Flight(self.driver)
         #self.driver.find_element_by_xpath("//table//tbody//tr[1]//td[1]//input").click()
